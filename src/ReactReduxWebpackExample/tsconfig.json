@@ -1,0 +1,41 @@
+﻿{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "rootDirs": [
+      ".",
+      "src"
+    ],
+    "module": "es2015",
+    "moduleResolution": "node",
+    "target": "es5",
+    "strict": false,
+    "jsx": "react",
+    "experimentalDecorators": true,
+    "sourceMap": true,
+    "skipDefaultLibCheck": true,
+    "lib": [ "dom", "es6", "es2015", "es2017" ],
+    "emitDecoratorMetadata": true,
+    "allowJs": true,
+    "maxNodeModuleJsDepth": 1,
+    "types": [
+      "webpack-env"
+    ],
+    "typeRoots": [
+      "node_modules/@types"
+    ],
+    "paths": {
+      // Fix "Duplicate identifier" errors caused by multiple dependencies fetching their own copies of type definitions.
+      // We tell TypeScript which type definitions module to treat as the canonical one (instead of combining all of them).
+      "history": [ "./node_modules/@types/history" ],
+      //"redux": [ "./node_modules/@types/redux" ],
+      "react": [ "./node_modules/@types/react" ],
+      "react-router": [ "src/types/react-router" ]
+    }
+  },
+  "compileOnSave": false,
+  "buildOnSave": false,
+  "exclude": [
+    "bin",
+    "node_modules"
+  ]
+}
