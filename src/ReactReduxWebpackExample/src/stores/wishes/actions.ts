@@ -5,7 +5,6 @@ import {
     WishListActions,
     Wish,
 } from './types';
-import { setTimeout } from 'timers';
 import { addTask } from 'domain-task';
 
 const load: ActionCreator<AppThunkAction<WishListActions>> = () => (dispatch, getState) => {

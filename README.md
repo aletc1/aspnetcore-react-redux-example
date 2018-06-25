@@ -2,6 +2,13 @@
 
 Welcome to this boilerplate.
 
+[quote]
+# Important version notice
+Currently semantic ui less package requires LESS 2 (not 3) and ASP.NET Core Webpack middleware requires react-hot-module 3 (not 4). Specific verions:
+- "react-hot-loader": "^3.1.0",
+- "less": "^2.7.3",
+[/quote]
+
 ## How to run
 ```
 npm install
